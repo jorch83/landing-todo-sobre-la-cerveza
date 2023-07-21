@@ -1,0 +1,19 @@
+$primary-color: rgba(255,51,0, 1);
+$black: rgba(0,0,0,.87);
+$white: #ffffff;
+$green: #46793a;
+$orange: #fe942f;
+$orange-light: rgba(255,51,0, .9);
+$gray: #323232;
+$gray-light: #5d605d;
+$gray-light-shine: #858585;
+$yellow: #ffcc00;
+$blue: #0c2056;
+$red: #f22b3a;
+
+
+.bg-orange{
+  background-image: url("../images/bg-orange.gif");
+  background-color: $orange;
+  background-repeat: repeat;
+}

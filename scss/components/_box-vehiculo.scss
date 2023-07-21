@@ -1,0 +1,21 @@
+.container-vehiculos{
+  .btn-primary{
+    background-color: $black;
+    &:hover{
+      border:solid 1px $yellow;
+    }
+  }
+  .box-vehiculos{
+
+  }
+  .box-vehiculo__title{
+    font-family: 'barlowblack_italic', Verdana, Geneva, Tahoma, sans-serif;
+    border-left: solid 5px $yellow;
+    text-transform: uppercase;
+  }
+  .seccion-entregas__fasciculo{
+    
+  }
+
+  .box-vehiculo__button{}
+}

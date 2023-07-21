@@ -1,0 +1,47 @@
+.footer__luppa{
+    .footer__luppa-redes{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 38px;
+            display: inline-block;
+        }
+        @include tablet{
+            text-align: left;
+        }
+    }
+    .footer__luppa-mail{
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        @include tablet{
+            text-align: left;
+        }
+    }
+    .row:first-child{
+        background-color: #000000;
+        color: #fff;
+
+        img{
+            margin: 0 auto;
+        }
+        a:link{
+            color: #fff;
+        }
+
+
+    }
+    
+    .footer__copy{
+        background-color: #6E1617;
+        color: #fff;
+        padding: 15px 5px;
+        text-align: center;
+        font-size: .7rem;
+        @include desktop{
+            font-size: .8rem;
+        }
+    }
+}

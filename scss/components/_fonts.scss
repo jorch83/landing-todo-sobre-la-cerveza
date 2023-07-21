@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'barlowregular';
+    src: url('../fonts/barlow-regular.woff2') format('woff2'),
+         url('../fonts/barlow-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'barlowblack_italic';
+    src: url('../fonts/barlow-blackitalic.woff2') format('woff2'),
+         url('../fonts/barlow-blackitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'barlowbold';
+    src: url('../fonts/barlow-bold.woff2') format('woff2'),
+         url('../fonts/barlow-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
