@@ -1,0 +1,28 @@
+/* ===================================
+   Page Piling
+====================================== */
+#pp-nav li .active span, .pp-slidesNav .active span {
+  background-color: #0091FF;
+}
+
+#pp-nav span, .pp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  box-shadow: inset 0 0 0 7px transparent;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#pp-nav li, .pp-slidesNav li {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 16px 8px 16px 8px;
+  position: relative;
+}

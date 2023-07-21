@@ -1,0 +1,28 @@
+.hero-banner{
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top:58px;
+
+  @include desktop{
+    max-width: 1300px !important;
+  }
+
+}
+.hero-banner__cervezas{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+  @include tablet{
+    margin: -120px auto 50px auto;
+  }
+  @include desktop{
+    margin: -120px auto 50px auto
+  }
+  @include large{
+    margin: -120px auto 50px auto
+  }
+}

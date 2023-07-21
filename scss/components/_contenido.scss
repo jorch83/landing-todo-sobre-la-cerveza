@@ -1,0 +1,124 @@
+/* ===================================
+   CONTENIDO
+====================================== */
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: calc(70vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include tablet{
+    
+  }
+  @include desktop{
+    height: 100vh;
+  }
+  @include large{
+    position: absolute;
+    width: 60%;
+    height: calc(100vh - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0px;
+    right: 0px;
+  }
+  @include x-large{
+    position: absolute;
+    width: 60%;
+    height: calc(100vh - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+.bg-image__industria{
+  background-image: url(../images/bg-image-industria.jpg);
+  height: 15vh;
+}
+
+.contenido{
+
+  background-color: #CEEAFF;
+  height: auto;
+
+  @include tablet{
+    
+  }
+  @include desktop{
+    height: 100vh;
+  }
+  @include large{
+    height: 100vh;
+  }
+  @include x-large{
+    height: 100vh;
+  }
+}
+
+.contenido__servicios{
+  background-color: #000;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+
+}
+
+.contenido-box p {
+  font-size: 16px;
+}
+
+.experiencia{
+  background-color: #000;
+}
+
+.pp-viewing-inicio{
+  #logo-dark{
+    display: inline;
+  }
+  #logo-white{
+    display: none;
+  }
+}
+
+.pp-viewing-contenido{
+  #logo-dark{
+    display: inline;
+  }
+  #logo-white{
+    display: none;
+  }
+}
+
+.pp-viewing-experiencia{
+  #logo-dark{
+    display: none;
+  }
+  #logo-white{
+    display: inline;
+  }
+}
+.pp-viewing-industria{
+  #logo-dark{
+    display: inline;
+  }
+  #logo-white{
+    display: none;
+  } 
+}
+
+.pp-viewing-conversemos{
+  #logo-dark{
+    display: none;
+  }
+  #logo-white{
+    display: inline;
+  } 
+}

@@ -1,0 +1,22 @@
+.container-nav{
+  max-width: 100% !important;
+  @include desktop{
+    max-width: 1300px !important;
+  }
+}
+
+.navbar{
+  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: center;
+
+  .nav-link{
+    padding: 10px 0px;
+    @include desktop{ 
+      padding: 0px 25px !important;
+    }
+  }
+  .nav-link:hover{
+    color: $orange !important;
+  }
+}
