@@ -9,9 +9,6 @@ window.onload = function() {
   const itemNav3 = document.querySelector('.item-nav-3');
   itemNav3.classList.add('display-inline', 'animate__animated', 'animate__bounceInDown');
 
-  const vehiculos = document.querySelector('.cervezas');
-  vehiculos.classList.add('display-inline', 'animate__animated', 'animate__bounceInUp', 'animate__delay-04s');
-
 };
 
  

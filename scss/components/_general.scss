@@ -97,3 +97,9 @@ section{padding: 0;}
 
 .display-none{display: none !important;}
 .display-inline{display: inline !important;}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: $yellow;
+  border-color: var(--bs-btn-active-border-color);
+}

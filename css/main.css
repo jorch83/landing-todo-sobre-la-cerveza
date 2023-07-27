@@ -386,6 +386,12 @@ section {
   display: inline !important;
 }
 
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: #ffcc00;
+  border-color: var(--bs-btn-active-border-color);
+}
+
 h1 {
   font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px;
@@ -474,6 +480,12 @@ p {
   }
 }
 
+.hero-banner__bg {
+  background-image: url(../images/bg-banner-principal-todo-sobre-la-cerveza.jpg);
+  background-size: cover;
+  height: 340px;
+}
+
 .container-nav {
   max-width: 100% !important;
 }
@@ -541,6 +553,7 @@ p {
   border-left: solid 5px #ffcc00;
   text-transform: uppercase;
 }
+
 .badge-yellow {
   margin-top: 180px;
   background-color: #ffcc00;
@@ -593,12 +606,6 @@ p {
   .seccion-entregas__fasciculo-texto {
     margin-top: -240px;
   }
-}
-
-.text-proximos-modelos {
-  background-color: rgba(0, 0, 0, 0.87);
-  color: #ffffff;
-  text-align: center;
 }
 
 .preguntas-frecuentes ul li p:first-child {
@@ -776,6 +783,11 @@ p {
   margin: 0 auto;
   max-width: 640px;
 }
+@media only screen and (min-width: 768px) {
+  .main-video {
+    height: 360px;
+  }
+}
 
 /* ===================================
    Loader
@@ -826,4 +838,53 @@ p {
 .animate__animated.animate__delay-04s {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
+}
+
+.carousel {
+  border: solid 2px gray;
+}
+
+.carousel-item:before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgb(0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  content: "";
+}
+
+.accordion-button {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.accordion-button::after {
+  color: #ffffff;
+  background-image: url("../images/arrow.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/arrow.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #000;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-body {
+  background-color: #323232;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card .card-text {
+  font-size: 0.9rem;
+  color: #fff !important;
 }

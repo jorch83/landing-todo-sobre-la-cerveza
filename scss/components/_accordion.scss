@@ -1,0 +1,22 @@
+.accordion-button{
+    background-color: #000;
+    color: $white;
+} 
+.accordion-button::after{
+    color: $white;
+    background-image: url("../images/arrow.svg");
+} 
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/arrow.svg");
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #000;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-body{
+    background-color: $gray;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.2rem;
+} 

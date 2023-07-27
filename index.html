@@ -12,7 +12,8 @@
 
       
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Main Style -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Lightbox -->
@@ -20,38 +21,28 @@
     <link rel="stylesheet" href="css/animate.min.css"/>
     <!-- JavaScript -->
     <script src="js/functions.js"></script>
-
     <title>Colección Todo sobre la cerveza</title>
   </head>
   <body>
 
-    <div class="container pb-0 pl-0 pr-0 p-md-0 container-nav">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="images/logo-todo-sobre-la-cerveza.png" width="98px" class="d-inline-block align-top logo-todo-sobre-la-cerveza display-none" alt="" loading="lazy">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item nav-item-1 active">
-              <a class="nav-link item-nav-1" id="btn-informacion" href="#seccion-informacion">INFORMACIÓN </a>
-            </li>
-            <li class="nav-item nav-item-2">
-              <a class="nav-link item-nav-2" id="btn-obra-editorial" href="#seccion-obra-editorial">OBRA EDITORIAL</a>
-            </li>
-            <li class="nav-item nav-item-3">
-              <a class="nav-link item-nav-3" id="btn-entregas" href="#seccion-entregas">ENTREGAS</a>
-            </li>
-            <li class="nav-item nav-item-4">
-              <a class="nav-link item-nav-4" id="btn-preguntas-frecuentes" href="#seccion-preguntas-frecuentes">PREGUNTAS FRECUENTES</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#seccion-informacion">INFORMACIÓN</a>
+            <a class="nav-link" href="#seccion-obra-editorial">OBRA EDITORIAL</a>
+            <a class="nav-link" href="#seccion-entregas">ENTREGAS</a>
+            <a class="nav-link" href="#seccion-preguntas-frecuentes">PREGUNTAS FRECUENTES</a>
+          </div>
         </div>
-      </nav>
-    </div>
-
+      </div>
+    </nav>
 
     <!--HERO BANNER-->
 
@@ -65,85 +56,31 @@
     </div>
 
     <!-- Desktop -->
-    <div class="container-fluid" style="background-image: url(images/bg-banner-principal-todo-sobre-la-cerveza.jpg);">
-      <div class="container hero-banner d-none d-md-block pl-0 pr-0">
+    <div class="container-fluid d-none d-md-block hero-banner__bg">
+    </div>
+
+    <div class="container p-0 d-none d-md-block" style="margin-top: -280px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+      <img src="images/banner-principal-todo-sobre-la-cerveza.png" width="100%" alt="Todo sobre la cerveza">
+      <img src="images/badge-primer-entrega.png" class="animate__animated animate__fadeInDown animate__delay-04s" style="position: relative; float: right; margin-top: -290px; margin-right: 50px;" alt="Primera Entrega">
+    </div>
+
+    <div class="container mt-0">
+      <img src="images/cervezas-bodegon.png" class="img-fluid" alt="">
+      <h4 class="mt-5 mt-md-3 p-0 p-md-5 text-center">
+La cerveza nació en Babilonia hace más de 6000 años y en la actualidad, el arte de fermentar y probar distintas combinaciones de malta y lúpulos es tendencia. Conoce este fascinante universo y conviértete en un experto en sabores, aromas y estilos con esta fantástica obra.
+      </h4>
+    </div>
+
+      <!-- Video -->
+      <div class="container mt-5 preload">
         <div class="row">
-          <div class="col-12">
-            <div>
-              <img src="images/banner-principal-todo-sobre-la-cerveza.png" width="100%" alt="Todo sobre la cerveza">
-            </div>
+          <div class="col-12 text-center">
+            <video width="100%" class="main-video" preload controls>
+              <source src="video/TodoSobreLaCerveza-spot.mp4" />
+            </video>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid hero-banner__cervezas d-none d-md-flex">
-      <img src="images/cervezas.png" class="d-none cervezas img-fluid" alt="Todo sobre la cerveza">
-    </div>
-
-    <!--END HERO BANNER-->
-
-    <!-- TITLE -->
-    <div class="container mt-5" id="seccion-informacion">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">
-            TODO SOBRE LA CERVEZA
-          </h1>
-
-          <!-- Divider -->
-          <div class="container d-flex justify-content-center pt-3">
-            <div class="divider">
-            </div>
-          </div>
-
-          <p class="text-center mt-3 mb-5"> Una colección para disfrutar aún más el sabor de la cerveza</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container container-entregas mt-5">
-
-      <div class="row d-flex justify-content-center">
-        <!-- item 1 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <img src="images/entregas/entrega-1.jpg" class="img-fluid" alt="CZECH PILSNER">
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 p-1 mt-3 text-center">
-            CZECH PILSNER
-          </div>
-        </div>
-        <!-- item 2 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <img src="images/entregas/entrega-2.jpg" class="img-fluid" alt="STOUT">
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 p-1 mt-3 text-center">
-            STOUT
-          </div>
-        </div>
-        <!-- item 3 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <img src="images/entregas/entrega-3.jpg" class="img-fluid" alt="PORTER">
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 p-1 mt-3 text-center">
-            PORTER
-          </div>
-        </div>
-        <!-- item 4 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <img src="images/entregas/entrega-4.jpg" class="img-fluid" alt="BELGIAN PALE ALE">
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 p-1 mt-3 text-center">
-            BELGIAN PALE ALE
-          </div>
-        </div>
-        
-      </div>
-
-    </div>
 
     <!-- TITLE -->
     <div class="container mt-5" id="seccion-obra-editorial">
@@ -166,6 +103,54 @@
 
     <div class="container seccion-entregas">
       <img src="images/fasciculos-muestra.jpg" alt="Fascículo Todo sobre la cerveza" width="100%">
+      <img src="images/fasciculos-muestra-2.jpg" class="mt-5" alt="Fascículo Todo sobre la cerveza" width="100%">
+
+      <div class="row mb-5 mt-5">
+
+        <div class="col-12 col-md-4 mt-3">
+          <div class="card">
+            <img src="images/cerveza-1.jpg" class="card-img-top" alt="Pilsner">
+            <div class="card-body">
+              <h4>
+                <span class="text-yellow">Vaso Pilsner</span> 
+              </h4>
+              <p class="card-text text-body-secondary">
+               
+                Los vasos Pilsner se caracterizan por su forma alta y cónica. Por esas características, además de hacer brillar el color dorado, ayuda a mantener la maravillosa espuma de las cervezas tipo Pilsner, en la parte superior del vaso y permite que los aromas se concentren para estar en estrecho contacto con el sentido del olfato.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4 mt-3">
+          <div class="card">
+            <img src="images/cerveza-2.jpg" class="card-img-top" alt="Stout">
+            <div class="card-body">
+              <h4>
+                <span class="text-yellow">Vaso Imperial Pint</span> 
+              </h4>
+              <p class="card-text text-body-secondary">
+                La pinta recibe el nombre de imperial porque su origen está en el imperio británico y es una medida que corresponde a la octava parte de un galón. En el Reino Unido es muy común este tipo de vaso, para que los consumidores sepan la cantidad que están bebiendo. Su boca más ancha que su base hace que los aromas se expandan mientras la espuma se mantiene.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-3">
+          <div class="card">
+            <img src="images/cerveza-3.jpg" class="card-img-top" alt="Porter">
+            <div class="card-body">
+              <h4>
+                <span class="text-yellow">Beer Mug</span> 
+              </h4>
+              <p class="card-text text-body-secondary">
+                Los Mug o jarras clásicas se usaron en paralelo a la pinta imperial en Gran Bretaña. Originalmente se hacían con hoyuelos para evitar que se deslizara en el lavado, pero en esta entrega les proponemos una versión lisa muy elegante. De boca ancha y tronco corto es ideal para concentrarse en el sabor y beber si dificultad.  
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>     
+
     </div>
 
     <!-- TITLE -->
@@ -173,7 +158,7 @@
       <div class="row">
         <div class="col-12">
           <h1 class="text-center">
-            ¡COMPLETA LA COLECCIÓN!
+            LISTADO DE ENTREGAS
           </h1>
 
           <!-- Divider -->
@@ -189,294 +174,493 @@
 
     <div class="container container-entregas mt-5">
 
-      <div class="row">
-        
-        <!-- item 1 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-1--2.jpg"  data-lightbox="fa-1" data-title="CZECH PILSNER">
-              <img src="images/entregas/entrega-1.jpg" class="img-fluid" width="100%" alt="CZECH PILSNER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            CZECH PILSNER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-1.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-1" data-title="CZECH PILSNER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-1--2.jpg" data-lightbox="fa-1" data-title="CZECH PILSNER"></a>
-            <a href="images/entregas/entrega-1--3.jpg" data-lightbox="fa-1" data-title="CZECH PILSNER"></a>
-          </div>
-        </div><!-- end -->
+      <!-- Carrousel Mobile -->
+      <div id="carouselExampleCaptions" class="carousel slide d-block d-md-none">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
+        </div>
+        <div class="carousel-inner">
+          
+          <!-- item 1  -->
+          <div class="carousel-item active">
+            <img src="images/entregas/entrega-1.jpg" class="d-block w-100" alt="CZECH PILSNER">
+            <div class="carousel-caption">
+              <h5>CZECH PILSNER</h5>
+              <a href="images/entregas/entrega-1.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-1" data-title="CZECH PILSNER">
+                VER ENTREGA #1
+              </a>
+              <a href="images/entregas/entrega-1--2.jpg" data-lightbox="fr-1" data-title="CZECH PILSNER"></a>
+              <a href="images/entregas/entrega-1--3.jpg" data-lightbox="fr-1" data-title="CZECH PILSNER"></a>
+            </div>
+          </div><!-- end item 1  -->
+          
+          <!-- item 2  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-2.jpg" class="d-block w-100" alt="STOUT">
+            <div class="carousel-caption">
+              <h5>STOUT</h5>
+              <a href="images/entregas/entrega-2.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-2" data-title="STOUT">
+                VER ENTREGA #2
+              </a>
+              <a href="images/entregas/entrega-2--2.jpg" data-lightbox="fr-2" data-title="STOUT"></a>
+              <a href="images/entregas/entrega-2--3.jpg" data-lightbox="fr-2" data-title="STOUT"></a>
+            </div>
+          </div><!-- end item 2  -->
+          
+          <!-- item 3  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-3.jpg" class="d-block w-100" alt="PORTER">
+            <div class="carousel-caption">
+              <h5>PORTER</h5>
+              <a href="images/entregas/entrega-3.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-3" data-title="PORTER">
+                VER ENTREGA #3
+              </a>
+              <a href="images/entregas/entrega-3--2.jpg" data-lightbox="fr-3" data-title="PORTER"></a>
+              <a href="images/entregas/entrega-3--3.jpg" data-lightbox="fr-3" data-title="PORTER"></a>
+            </div>
+          </div><!-- end item 3  -->
+          
+          <!-- item 4  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-4.jpg" class="d-block w-100" alt="BELGIAN PALE ALE">
+            <div class="carousel-caption">
+              <h5>BELGIAN PALE ALE</h5>
+              <a href="images/entregas/entrega-4.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-4" data-title="BELGIAN PALE ALE">
+                VER ENTREGA #4
+              </a>
+              <a href="images/entregas/entrega-4--2.jpg" data-lightbox="fr-4" data-title="BELGIAN PALE ALE"></a>
+              <a href="images/entregas/entrega-4--3.jpg" data-lightbox="fr-4" data-title="BELGIAN PALE ALE"></a>
+            </div>
+          </div><!-- end item 4  -->
+          
+          <!-- item 5  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-5.jpg" class="d-block w-100" alt="PALE ALE">
+            <div class="carousel-caption">
+              <h5>PALE ALE</h5>
+              <a href="images/entregas/entrega-5.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-5" data-title="PALE ALE">
+                VER ENTREGA #5
+              </a>
+              <a href="images/entregas/entrega-5--2.jpg" data-lightbox="fr-5" data-title="PALE ALE"></a>
+              <a href="images/entregas/entrega-5--3.jpg" data-lightbox="fr-5" data-title="PALE ALE"></a>
+            </div>
+          </div><!-- end item 5  -->
+          
+          <!-- item 6  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-6.jpg" class="d-block w-100" alt="WHEAT BEER">
+            <div class="carousel-caption">
+              <h5>WHEAT BEER</h5>
+              <a href="images/entregas/entrega-6.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-6" data-title="WHEAT BEER">
+                VER ENTREGA #6
+              </a>
+              <a href="images/entregas/entrega-6--2.jpg" data-lightbox="fr-6" data-title="WHEAT BEER"></a>
+              <a href="images/entregas/entrega-6--3.jpg" data-lightbox="fr-6" data-title="WHEAT BEER"></a>
+            </div>
+          </div><!-- end item 6  -->
+          
+          <!-- item 7  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-7.jpg" class="d-block w-100" alt="BROWN ALE">
+            <div class="carousel-caption">
+              <h5>BROWN ALE</h5>
+              <a href="images/entregas/entrega-7.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-7" data-title="BROWN ALE">
+                VER ENTREGA #7
+              </a>
+              <a href="images/entregas/entrega-7--2.jpg" data-lightbox="fr-7" data-title="BROWN ALE"></a>
+              <a href="images/entregas/entrega-7--3.jpg" data-lightbox="fr-7" data-title="BROWN ALE"></a>
+            </div>
+          </div><!-- end item 7  -->
+          
+          <!-- item 8  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-8.jpg" class="d-block w-100" alt="INDIAN PALE ALE">
+            <div class="carousel-caption">
+              <h5>INDIAN PALE ALE</h5>
+              <a href="images/entregas/entrega-8.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-8" data-title="INDIAN PALE ALE">
+                VER ENTREGA #8
+              </a>
+              <a href="images/entregas/entrega-8--2.jpg" data-lightbox="fr-8" data-title="INDIAN PALE ALE"></a>
+              <a href="images/entregas/entrega-8--3.jpg" data-lightbox="fr-8" data-title="INDIAN PALE ALE"></a>
+            </div>
+          </div><!-- end item 8  -->
+          
+          <!-- item 9  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-9.jpg" class="d-block w-100" alt="BOCK BEER">
+            <div class="carousel-caption">
+              <h5>BOCK BEER</h5>
+              <a href="images/entregas/entrega-9.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-9" data-title="BOCK BEER">
+                VER ENTREGA #9
+              </a>
+              <a href="images/entregas/entrega-9--2.jpg" data-lightbox="fr-9" data-title="BOCK BEER"></a>
+              <a href="images/entregas/entrega-9--3.jpg" data-lightbox="fr-9" data-title="BOCK BEER"></a>
+            </div>
+          </div><!-- end item 9  -->
+          
+          <!-- item 10  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-10.jpg" class="d-block w-100" alt="EISBOCK">
+            <div class="carousel-caption">
+              <h5>EISBOCK</h5>
+              <a href="images/entregas/entrega-10.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-10" data-title="EISBOCK">
+                VER ENTREGA #10
+              </a>
+              <a href="images/entregas/entrega-10--2.jpg" data-lightbox="fr-10" data-title="EISBOCK"></a>
+              <a href="images/entregas/entrega-10--3.jpg" data-lightbox="fr-10" data-title="EISBOCK"></a>
+            </div>
+          </div><!-- end item 10  -->
+          
+          <!-- item 11  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-11.jpg" class="d-block w-100" alt="EUROPEAN LAGER">
+            <div class="carousel-caption">
+              <h5>EUROPEAN LAGER</h5>
+              <a href="images/entregas/entrega-11.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-11" data-title="EUROPEAN LAGER">
+                VER ENTREGA #11
+              </a>
+              <a href="images/entregas/entrega-11--2.jpg" data-lightbox="fr-11" data-title="EUROPEAN LAGER"></a>
+              <a href="images/entregas/entrega-11--3.jpg" data-lightbox="fr-11" data-title="EUROPEAN LAGER"></a>
+            </div>
+          </div><!-- end item 11  -->
+          
+          <!-- item 12  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-12.jpg" class="d-block w-100" alt="DARK LAGER">
+            <div class="carousel-caption">
+              <h5>DARK LAGER</h5>
+              <a href="images/entregas/entrega-12.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-12" data-title="DARK LAGER">
+                VER ENTREGA #12
+              </a>
+              <a href="images/entregas/entrega-12--2.jpg" data-lightbox="fr-12" data-title="DARK LAGER"></a>
+              <a href="images/entregas/entrega-12--3.jpg" data-lightbox="fr-12" data-title="DARK LAGER"></a>
+            </div>
+          </div><!-- end item 12  -->
+          
+          <!-- item 13  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-13.jpg" class="d-block w-100" alt="BELGIAN ALE">
+            <div class="carousel-caption">
+              <h5>BELGIAN ALE</h5>
+              <a href="images/entregas/entrega-13.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-13" data-title="BELGIAN ALE">
+                VER ENTREGA #13
+              </a>
+              <a href="images/entregas/entrega-13--2.jpg" data-lightbox="fr-13" data-title="BELGIAN ALE"></a>
+              <a href="images/entregas/entrega-13--3.jpg" data-lightbox="fr-13" data-title="BELGIAN ALE"></a>
+            </div>
+          </div><!-- end item 13  -->
+          
+          <!-- item 14  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-14.jpg" class="d-block w-100" alt="SPONTANEOUS FERMENTING">
+            <div class="carousel-caption">
+              <h5>SPONTANEOUS FERMENTING</h5>
+              <a href="images/entregas/entrega-14.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-14" data-title="SPONTANEOUS FERMENTING">
+                VER ENTREGA #14
+              </a>
+              <a href="images/entregas/entrega-14--2.jpg" data-lightbox="fr-14" data-title="SPONTANEOUS FERMENTING"></a>
+              <a href="images/entregas/entrega-14--3.jpg" data-lightbox="fr-14" data-title="SPONTANEOUS FERMENTING"></a>
+            </div>
+          </div><!-- end item 14  -->
+          
+          <!-- item 15  -->
+          <div class="carousel-item">
+            <img src="images/entregas/entrega-15.jpg" class="d-block w-100" alt="CRAFT BEER">
+            <div class="carousel-caption">
+              <h5>CRAFT BEER</h5>
+              <a href="images/entregas/entrega-15.jpg" class="example-image-link btn btn-primary" data-lightbox="fr-15" data-title="CRAFT BEER">
+                VER ENTREGA #15
+              </a>
+              <a href="images/entregas/entrega-15--2.jpg" data-lightbox="fr-15" data-title="CRAFT BEER"></a>
+              <a href="images/entregas/entrega-15--3.jpg" data-lightbox="fr-15" data-title="CRAFT BEER"></a>
+            </div>
+          </div><!-- end item 15  -->
 
-        <!-- item 2 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-2--2.jpg"  data-lightbox="fa-2" data-title="STOUT">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><!-- End Carrousel Mobile -->
+
+      <!-- Carousel Desktop -->
+      <div class="container d-none d-md-block">
+        <div class="row">
+          <!-- item 1 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
+                <img src="images/entregas/entrega-1.jpg" class="img-fluid" width="100%" alt="CZECH PILSNER" data-lightbox="fa-1">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              CZECH PILSNER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-1.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-1" data-title="CZECH PILSNER">
+                VER ENTREGA #1
+              </a>
+              <a href="images/entregas/entrega-1--2.jpg" data-lightbox="fa-1" data-title="CZECH PILSNER"></a>
+              <a href="images/entregas/entrega-1--3.jpg" data-lightbox="fa-1" data-title="CZECH PILSNER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 2 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-2.jpg" class="img-fluid" width="100%" alt="STOUT">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            STOUT
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-2.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-2" data-title="STOUT">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-2--2.jpg" data-lightbox="fa-2" data-title="STOUT"></a>
-            <a href="images/entregas/entrega-2--3.jpg" data-lightbox="fa-2" data-title="STOUT"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 3 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-3--2.jpg"  data-lightbox="fa-3" data-title="PORTER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              STOUT
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-2.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-2" data-title="STOUT">
+                VER ENTREGA #2
+              </a>
+              <a href="images/entregas/entrega-2--2.jpg" data-lightbox="fa-2" data-title="STOUT"></a>
+              <a href="images/entregas/entrega-2--3.jpg" data-lightbox="fa-2" data-title="STOUT"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 3 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-3.jpg" class="img-fluid" width="100%" alt="PORTER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            PORTER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-3.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-3" data-title="PORTER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-3--2.jpg" data-lightbox="fa-3" data-title="PORTER"></a>
-            <a href="images/entregas/entrega-3--3.jpg" data-lightbox="fa-3" data-title="PORTER"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 4 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-4--2.jpg"  data-lightbox="fa-4" data-title="BELGIAN PALE ALE">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              PORTER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-3.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-3" data-title="PORTER">
+                VER ENTREGA #3
+              </a>
+              <a href="images/entregas/entrega-3--2.jpg" data-lightbox="fa-3" data-title="PORTER"></a>
+              <a href="images/entregas/entrega-3--3.jpg" data-lightbox="fa-3" data-title="PORTER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 4 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-4.jpg" class="img-fluid" width="100%" alt="BELGIAN PALE ALE">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            BELGIAN PALE ALE
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-4.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-4" data-title="BELGIAN PALE ALE">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-4--2.jpg" data-lightbox="fa-4" data-title="BELGIAN PALE ALE"></a>
-            <a href="images/entregas/entrega-4--3.jpg" data-lightbox="fa-4" data-title="BELGIAN PALE ALE"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 5 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-5--2.jpg"  data-lightbox="fa-5" data-title="PALE ALE">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              BELGIAN PALE ALE
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-4.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-4" data-title="BELGIAN PALE ALE">
+                VER ENTREGA #4
+              </a>
+              <a href="images/entregas/entrega-4--2.jpg" data-lightbox="fa-4" data-title="BELGIAN PALE ALE"></a>
+              <a href="images/entregas/entrega-4--3.jpg" data-lightbox="fa-4" data-title="BELGIAN PALE ALE"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 5 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-5.jpg" class="img-fluid" width="100%" alt="PALE ALE">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            PALE ALE
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-5.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-5" data-title="PALE ALE">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-5--2.jpg" data-lightbox="fa-5" data-title="PALE ALE"></a>
-            <a href="images/entregas/entrega-5--3.jpg" data-lightbox="fa-5" data-title="PALE ALE"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 6 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-6--2.jpg"  data-lightbox="fa-6" data-title="WHEAT BEER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              PALE ALE
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-5.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-5" data-title="PALE ALE">
+                VER ENTREGA #5
+              </a>
+              <a href="images/entregas/entrega-5--2.jpg" data-lightbox="fa-5" data-title="PALE ALE"></a>
+              <a href="images/entregas/entrega-5--3.jpg" data-lightbox="fa-5" data-title="PALE ALE"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 6 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-6.jpg" class="img-fluid" width="100%" alt="WHEAT BEER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            WHEAT BEER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-6.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-6" data-title="WHEAT BEER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-6--2.jpg" data-lightbox="fa-6" data-title="WHEAT BEER"></a>
-            <a href="images/entregas/entrega-6--3.jpg" data-lightbox="fa-6" data-title="WHEAT BEER"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 7 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-7--2.jpg"  data-lightbox="fa-7" data-title="BROWN ALE">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              WHEAT BEER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-6.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-6" data-title="WHEAT BEER">
+                VER ENTREGA #6
+              </a>
+              <a href="images/entregas/entrega-6--2.jpg" data-lightbox="fa-6" data-title="WHEAT BEER"></a>
+              <a href="images/entregas/entrega-6--3.jpg" data-lightbox="fa-6" data-title="WHEAT BEER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 7 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-7.jpg" class="img-fluid" width="100%" alt="BROWN ALE">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            BROWN ALE
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-7.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-7" data-title="BROWN ALE">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-7--2.jpg" data-lightbox="fa-7" data-title="BROWN ALE"></a>
-            <a href="images/entregas/entrega-7--3.jpg" data-lightbox="fa-7" data-title="BROWN ALE"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 8 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-8--2.jpg"  data-lightbox="fa-8" data-title="INDIAN PALE ALE">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              BROWN ALE
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-7.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-7" data-title="BROWN ALE">
+                VER ENTREGA #7
+              </a>
+              <a href="images/entregas/entrega-7--2.jpg" data-lightbox="fa-7" data-title="BROWN ALE"></a>
+              <a href="images/entregas/entrega-7--3.jpg" data-lightbox="fa-7" data-title="BROWN ALE"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 8 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-8.jpg" class="img-fluid" width="100%" alt="INDIAN PALE ALE">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            INDIAN PALE ALE
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-8.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-8" data-title="INDIAN PALE ALE">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-8--2.jpg" data-lightbox="fa-8" data-title="INDIAN PALE ALE"></a>
-            <a href="images/entregas/entrega-8--3.jpg" data-lightbox="fa-8" data-title="INDIAN PALE ALE"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 9 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-9--2.jpg"  data-lightbox="fa-9" data-title="BOCK BEER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              INDIAN PALE ALE
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-8.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-8" data-title="INDIAN PALE ALE">
+                VER ENTREGA #8
+              </a>
+              <a href="images/entregas/entrega-8--2.jpg" data-lightbox="fa-8" data-title="INDIAN PALE ALE"></a>
+              <a href="images/entregas/entrega-8--3.jpg" data-lightbox="fa-8" data-title="INDIAN PALE ALE"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 9 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-9.jpg" class="img-fluid" width="100%" alt="BOCK BEER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            BOCK BEER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-9.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-9" data-title="BOCK BEER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-9--2.jpg" data-lightbox="fa-9" data-title="BOCK BEER"></a>
-            <a href="images/entregas/entrega-9--3.jpg" data-lightbox="fa-9" data-title="BOCK BEER"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 10 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-10--2.jpg"  data-lightbox="fa-10" data-title="EISBOCK">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              BOCK BEER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-9.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-9" data-title="BOCK BEER">
+                VER ENTREGA #9
+              </a>
+              <a href="images/entregas/entrega-9--2.jpg" data-lightbox="fa-9" data-title="BOCK BEER"></a>
+              <a href="images/entregas/entrega-9--3.jpg" data-lightbox="fa-9" data-title="BOCK BEER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 10 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-10.jpg" class="img-fluid" width="100%" alt="EISBOCK">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            EISBOCK
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-10.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-10" data-title="EISBOCK">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-10--2.jpg" data-lightbox="fa-10" data-title="EISBOCK"></a>
-            <a href="images/entregas/entrega-10--3.jpg" data-lightbox="fa-10" data-title="EISBOCK"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 11 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-11--2.jpg"  data-lightbox="fa-11" data-title="EUROPEAN LAGER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              EISBOCK
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-10.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-10" data-title="EISBOCK">
+                VER ENTREGA #10
+              </a>
+              <a href="images/entregas/entrega-10--2.jpg" data-lightbox="fa-10" data-title="EISBOCK"></a>
+              <a href="images/entregas/entrega-10--3.jpg" data-lightbox="fa-10" data-title="EISBOCK"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 11 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-11.jpg" class="img-fluid" width="100%" alt="EUROPEAN LAGER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            EUROPEAN LAGER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-11.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-11" data-title="EUROPEAN LAGER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-11--2.jpg" data-lightbox="fa-11" data-title="EUROPEAN LAGER"></a>
-            <a href="images/entregas/entrega-11--3.jpg" data-lightbox="fa-11" data-title="EUROPEAN LAGER"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 12 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-12--2.jpg"  data-lightbox="fa-12" data-title="DARK LAGER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              EUROPEAN LAGER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-11.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-11" data-title="EUROPEAN LAGER">
+                VER ENTREGA #11
+              </a>
+              <a href="images/entregas/entrega-11--2.jpg" data-lightbox="fa-11" data-title="EUROPEAN LAGER"></a>
+              <a href="images/entregas/entrega-11--3.jpg" data-lightbox="fa-11" data-title="EUROPEAN LAGER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 12 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-12.jpg" class="img-fluid" width="100%" alt="DARK LAGER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            DARK LAGER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-12.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-12" data-title="DARK LAGER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-12--2.jpg" data-lightbox="fa-12" data-title="DARK LAGER"></a>
-            <a href="images/entregas/entrega-12--3.jpg" data-lightbox="fa-12" data-title="DARK LAGER"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 13 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-13--2.jpg"  data-lightbox="fa-13" data-title="BELGIAN ALE">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              DARK LAGER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-12.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-12" data-title="DARK LAGER">
+                VER ENTREGA #12
+              </a>
+              <a href="images/entregas/entrega-12--2.jpg" data-lightbox="fa-12" data-title="DARK LAGER"></a>
+              <a href="images/entregas/entrega-12--3.jpg" data-lightbox="fa-12" data-title="DARK LAGER"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 13 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-13.jpg" class="img-fluid" width="100%" alt="BELGIAN ALE">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            BELGIAN ALE
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-13.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-13" data-title="BELGIAN ALE">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-13--2.jpg" data-lightbox="fa-13" data-title="BELGIAN ALE"></a>
-            <a href="images/entregas/entrega-13--3.jpg" data-lightbox="fa-13" data-title="BELGIAN ALE"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 14 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-14--2.jpg"  data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              BELGIAN ALE
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-13.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-13" data-title="BELGIAN ALE">
+                VER ENTREGA #13
+              </a>
+              <a href="images/entregas/entrega-13--2.jpg" data-lightbox="fa-13" data-title="BELGIAN ALE"></a>
+              <a href="images/entregas/entrega-13--3.jpg" data-lightbox="fa-13" data-title="BELGIAN ALE"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 14 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-14.jpg" class="img-fluid" width="100%" alt="SPONTANEOUS FERMENTING">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            SPONTANEOUS
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-14.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-14--2.jpg" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING"></a>
-            <a href="images/entregas/entrega-14--3.jpg" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING"></a>
-          </div>
-        </div><!-- end -->
-
-        <!-- item 15 -->
-        <div class="col-12 col-md-6 col-lg-3 p-3">
-          <div class="box-entrega__image d-flex justify-content-center">
-            <a href="images/entregas/entrega-15--2.jpg"  data-lightbox="fa-15" data-title="CRAFT BEER">
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              SPONTANEOUS
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-14.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING">
+                VER ENTREGA #14
+              </a>
+              <a href="images/entregas/entrega-14--2.jpg" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING"></a>
+              <a href="images/entregas/entrega-14--3.jpg" data-lightbox="fa-14" data-title="SPONTANEOUS FERMENTING"></a>
+            </div>
+          </div><!-- end -->
+  
+          <!-- item 15 -->
+          <div class="col-12 col-md-6 col-lg-3 p-3">
+            <div class="box-entrega__image d-flex justify-content-center">
               <img src="images/entregas/entrega-15.jpg" class="img-fluid" width="100%" alt="CRAFT BEER">
-            </a>
-          </div>
-          <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
-            CRAFT BEER
-          </div>
-          <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
-            <a href="images/entregas/entrega-15.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-15" data-title="CRAFT BEER">
-              VER ENTREGA
-            </a>
-            <a href="images/entregas/entrega-15--2.jpg" data-lightbox="fa-15" data-title="CRAFT BEER"></a>
-            <a href="images/entregas/entrega-15--3.jpg" data-lightbox="fa-15" data-title="CRAFT BEER"></a>
-          </div>
-        </div><!-- end -->
-
-      </div>
+            </div>
+            <div class="box-entrega__title pl-0 pl-md-4 mt-2 text-center">
+              CRAFT BEER
+            </div>
+            <div class="box-entrega__button d-flex justify-content-center mt-3 p-2">
+              <a href="images/entregas/entrega-15.jpg" class="example-image-link btn btn-primary" data-lightbox="fa-15" data-title="CRAFT BEER">
+                VER ENTREGA #15
+              </a>
+              <a href="images/entregas/entrega-15--2.jpg" data-lightbox="fa-15" data-title="CRAFT BEER"></a>
+              <a href="images/entregas/entrega-15--3.jpg" data-lightbox="fa-15" data-title="CRAFT BEER"></a>
+            </div>
+          </div><!-- end -->
+  
+        </div>
+      </div><!-- End Carousel Desktop -->
 
     </div>
 
@@ -500,41 +684,60 @@
         </div>
       </div>
 
+      <!-- FAQS -->
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <ul class="mt-5">
-              <li>
-                <p>¿De cuántas ediciones se compone la Colección?</p>
-                <p>Son 30 entregas:<br>
-                  De la entrega 1 a la 11, periodicidad catorcenal<br>
-                  De la entrega 12 a la 30, semanal
-                </p>
-              </li>
-              <li>
-                <p>¿Cuál es el precio?</p>
-                <p>
-                  Edición 1 a $79.90 <br>
-                  Edición 2 a $199.90 <br>
-                  Edición 3 en adelante a $299.90
-                </p>
-              </li>
-              <li>
-                <p>¿Cómo puedo conseguir la colección?</p>
-                <p>
-                  La colección de TODO SOBRE LA CERVEZA está disponible en puestos de revistas, tiendas de autoservicio y departamentales
-                </p>
-              </li>
-              <li>
-                <p>¿De que trata la colección?</p>
-                <p>
-                  Por primera vez en kiosco, una colección para los amantes de la cerveza. En cada entrega encontrarás un fascículo con información, variedades, recetas, maridajes, seretos para su elaboración y de regalo un vaso para sentir el sabor y el aroma prefecto de cada tipo de cerveza.
-                </p>
-              </li>
-            </ul>
-            <p style="padding-left: 40px;"> <span style="font-family: 'barlowbold' !important;">AVISO IMPORTANTE</span> El editor se reserva la posibilidad de modificar durante la publicación de la obra el precio de las entregas, la frecuencia o el orden. Imágenes ilustrativas, no definitivas.</p>
+        
+        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿De cuántas ediciones se compone la Colección?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">   
+                <p>Son 30 entregas catorcenales
+              </p></div>
+            </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Cuál es el precio?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>
+                  Edición 1 a $79,90<br>
+                  Edición 2 a $149,90<br>
+                  Edición 3 en adelante $189,90
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Cómo puedo conseguir la colección?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>
+                  La colección de TODO SOBRE LA CERVEZA está disponible en puestos de revistas y tiendas de autoservicio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="ps-4 pt-4"> <span style="font-family: 'barlowbold' !important;">AVISO IMPORTANTE</span><br> El editor se reserva la posibilidad de modificar durante la publicación de la obra el precio de las entregas, la frecuencia o el orden. Imágenes ilustrativas, no definitivas. <br> <br>
+            El consumo excesivo de alcohol es perjudicial para la salud.
+
+          
+          </p>
         </div>
+
       </div>
     </section>
 
@@ -568,13 +771,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/popper.min.js" charset="utf-8"></script>
-    <script src="js/bootstrap.min.js" charset="utf-8"></script>
 
     <!-- Lightbox -->
     <script src="js/lightbox.js"></script>
     <script>
       lightbox.option({
-        'albumLabel': "Imagen %1 of %2"
+        'resizeDuration': 200,
+        'alwaysShowNavOnTouchDevices': true
       })
 
       function scrollToAnchor(aid){
@@ -583,42 +786,18 @@
       }
 
       $("#btn-informacion").click(function() {
-        $(".nav-item-1").removeClass('active');
-        $(".nav-item-2").removeClass('active');
-        $(".nav-item-3").removeClass('active');
-        $(".nav-item-4").removeClass('active');
-
-        $(".nav-item-1").addClass('active');
         scrollToAnchor('#seccion-informacion');
       });
       $("#btn-obra-editorial").click(function() {
-        $(".nav-item-1").removeClass('active');
-        $(".nav-item-2").removeClass('active');
-        $(".nav-item-3").removeClass('active');
-        $(".nav-item-4").removeClass('active');
-
-        $(".nav-item-2").addClass('active');
-
         scrollToAnchor('#seccion-obra-editorial');
       });
       $("#btn-entregas").click(function() {
-        $(".nav-item-1").removeClass('active');
-        $(".nav-item-2").removeClass('active');
-        $(".nav-item-3").removeClass('active');
-        $(".nav-item-4").removeClass('active');
-
-        $(".nav-item-3").addClass('active');
         scrollToAnchor('#seccion-entregas');
       });
       $("#btn-preguntas-frecuentes").click(function() {
-        $(".nav-item-1").removeClass('active');
-        $(".nav-item-2").removeClass('active');
-        $(".nav-item-3").removeClass('active');
-        $(".nav-item-4").removeClass('active');
-
-        $(".nav-item-4").addClass('active');
         scrollToAnchor('#seccion-preguntas-frecuentes');
       });
+    
   </script>
   </body>
 </html>

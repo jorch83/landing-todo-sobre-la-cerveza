@@ -1,4 +1,7 @@
 .main-video{
     margin: 0 auto;
     max-width: 640px;
+    @include tablet{
+        height: 360px;
+    }
 }
